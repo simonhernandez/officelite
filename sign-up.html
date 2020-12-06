@@ -9,28 +9,111 @@
     <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
 <body>
-  Work smarter. Save time.
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
+  <!-- Header -->
+  <header class="header">
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+    <!-- Wrapper -->
+    <div class="wrapper">
 
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="/" class="nav__logo"><img src="./assets/shared/logo.svg" alt="Officelite Logo"></a>
+      </nav>
 
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
+    </div>
+
+  </header>
+
+  <!-- Main -->
+  <main class="main main--signup">
+
+    <!-- Section - Signup -->
+    <section class="section signup">
+
+      <!-- Wrapper -->
+      <div class="wrapper">
+
+        <!-- Signup - Text Container -->
+        <div class="signup__text-container">
+          <h1 class="heading heading--1">Work smarter. Save time.</h1>
+
+          <p class="paragraph">
+            Easily manage your projects. Get on the list and receive in-app perks available only to 
+            early subscribers. We are moving into final development and getting ready for official launch soon.
+          </p>
+
+          <div class="countdown countdown--light">
+            <time class="countdown__days" id="days">
+              <span>47</span>
+              days
+            </time>
+            <time class="countdown__hours" id="hours">
+              <span>07</span>
+              hours
+            </time>
+            <time class="countdown__min" id="min">
+              <span>56</span>
+              min
+            </time>
+            <time class="countdown__sec" id="sec">
+              <span>14</span>
+              sec
+            </time>
+          </div>
+
+        </div>
+
+        <!-- Signup - Form -->
+        <form action="" class="form">
+
+          <!-- Name -->
+          <div class="form__control">
+            <input type="text" name="" id="name" placeholder="Name">
+            <small></small>
+          </div>
+
+          <!-- Email -->
+          <div class="form__control">
+            <input type="email" name="" id="email" placeholder="Email Address">
+            <small></small>
+          </div>
+
+          <!-- Plans -->
+          <div class="form__control">
+            <label for="packs">Basic Pack Free</label>
+
+            <select name="packs" id="packs">
+              <option value="Basic" selected>Basic Pack Free</option>
+              <option value="Pro">Pro Pack $9.99</option>
+              <option value="Ultimate">Ultimate Pack $19.99</option>
+            </select>
+          </div>
+
+          <!-- Phone -->
+          <div class="form__control">
+            <input type="tel" name="" id="phone" placeholder="Phone Number">
+            <small></small>
+          </div>
+
+          <!-- Company -->
+          <div class="form__control">
+            <input type="text" name="" id="company" placeholder="Company">
+            <small></small>
+          </div>
+
+          <button class="btn btn--primary-1">Get on the list</button>
+        </form>
+
+      </div> <!-- // Wrapper -->
+
+    </section>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="./app/js/countdown.js"></script>
+  <script src="./app/js/form-validation.js"></script>
+
 </body>
 </html>
