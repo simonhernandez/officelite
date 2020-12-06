@@ -9,45 +9,181 @@
   <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
 <body> 
-  A simple solution to complex tasks is coming soon
 
-  Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
-  collaboration platform built with an intuitive interface to improve productivity.
+  <!-- Header -->
+  <header class="header">
 
-  Get Started
+    <!-- Wrapper -->
+    <div class="wrapper">
 
-  Basic
-  Free
-  Up to 5 users for free
-  Basic document collaboration
-  2 gb storage
-  Great security and support
-  Try for Free
+      <!-- Navigation -->
+      <nav class="nav">
+        <a href="/" class="nav__logo"><img src="./assets/shared/logo.svg" alt="Officelite Logo"></a>
+      </nav>
 
-  Pro
-  $9.99
-  Per user, billed monthly
-  All essential integrations
-  50 gb storage
-  More control and insights
-  Try for Free
+    </div>
 
-  Ultimate
-  $19.99
-  Per user, billed monthly
-  Robust work management
-  100 gb storage
-  VIP support
-  Try for Free
+  </header>
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+  <!-- Main -->
+  <main class="main main--home">
 
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-  Get Started
+    <!-- Section - Hero -->
+    <section class="section hero">
+
+      <!-- Wrapper -->
+      <div class="wrapper">
+
+        <!-- Hero - Text Container -->
+        <div class="hero__text-container">
+          <h1 class="heading heading--1">
+            A simple solution to complex tasks is coming soon
+          </h1>
+
+          <p class="paragraph">
+            Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
+            collaboration platform built with an intuitive interface to improve productivity.
+          </p>
+
+          <a class="btn btn--primary-1">Get Started</a>
+
+        </div>
+
+        <!-- Hero - Image Container -->
+        <div class="hero__image-container">
+          <img src="./assets/home/illustration-charts.svg" alt="An illustration of some charts" class="hero__img">
+        </div>
+
+      </div> <!-- // Wrapper -->
+
+      <!-- Shapes -->
+      <div class="shape shape--home-1"></div>
+
+    </section>
+
+    <!-- Section - Subscription -->
+    <section class="section subscription">
+
+      <!-- Wrapper -->
+      <div class="wrapper">
+
+        <!-- Subscription - Pricing -->
+        <ul class="pricing">
+
+          <!-- Pricing Plan - 01 -->
+          <li class="pricing__plan">
+
+            <!-- Card -->
+            <div class="card">
+
+              <span>Basic</span>
+              <div class="card__title">
+                <span>Free</span>
+                Up to 5 users for free
+              </div>
+
+              <ul class="card__list">
+                <li class="card__item">Basic document collaboration</li>
+                <li class="card__item">2 GB storage</li>
+                <li class="card__item">Great security and support</li>
+              </ul>
+
+              <button class="btn btn--primary-2">Try for Free</button>
+
+            </div> <!-- // Card -->
+
+          </li> <!-- // Pricing Plan - 01 -->
+
+          <!-- Pricing Plan - 02 -->
+          <li class="pricing__plan">
+
+            <!-- Card -->
+            <div class="card card--blue">
+
+              <span>Pro</span>
+              <div class="card__title">
+                <span>$9.99</span>
+                Per user, billed monthly
+              </div>
+
+              <ul class="card__list">
+                <li class="card__item">All essential integrations</li>
+                <li class="card__item">50 GB storage</li>
+                <li class="card__item">More control and insights</li>
+              </ul>
+
+              <button class="btn btn--secondary">Try for Free</button>
+
+            </div> <!-- // Card  -->
+
+          </li> <!-- // Pricing Plan - 02 -->
+
+          <!-- Pricing Plan - 03 -->
+          <li class="pricing__plan">
+
+            <!-- Card -->
+            <div class="card">
+
+              <span>Ultimate</span>
+              <div class="card__title">
+                <span>$19.99</span>
+                Per user, billed monthly
+              </div>
+
+              <ul class="card__list">
+                <li class="card__item">Robust work management</li>
+                <li class="card__item">100 gb storage</li>
+                <li class="card__item">VIP support</li>
+              </ul>
+
+              <button class="btn btn--primary-2">Try for Free</button>
+
+            </div> <!-- // Card -->
+
+          </li> <!-- // Pricing Plan - 03 -->
+
+        </ul> <!-- // Subscription - Pricing -->
+
+        <!-- Subscription - CTA -->
+        <div class="subcription__cta">
+
+          <h3 class="heading heading--3">
+            Coming <time>4 Nov 2020</time>
+          </h3>
+
+          <div class="countdown">
+            <time class="countdown__days" id="days">
+              <span>47</span>
+              days
+            </time>
+            <time class="countdown__hours" id="hours">
+              <span>07</span>
+              hours
+            </time>
+            <time class="countdown__min" id="min">
+              <span>56</span>
+              min
+            </time>
+            <time class="countdown__sec" id="sec">
+              <span>14</span>
+              sec
+            </time>
+          </div>
+
+          <a href="/sign-up.html" class="btn btn--primary-1">Get Started</a>
+
+        </div>
+
+      </div> <!-- // Wrapper -->
+
+      <!-- Shapes -->
+      <div class="shape shape--home-2"></div>
+
+    </section>
+
+  </main>
+
+  <script src="./app/js/countdown.js"></script>
+
 </body>
 </html>
