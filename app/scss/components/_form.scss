@@ -1,0 +1,43 @@
+/*
+    ------------------------
+    -------- Form ----------
+    ------------------------
+*/
+
+.form{
+    
+    > *:not(:last-child){
+        margin-bottom: var(--space-xl);
+    }
+
+    input,
+    textarea{
+        padding: var(--space-base);
+        border-bottom: 1px solid var(--color-form-input-border);
+        color: var(--color-form-input-text);
+        /* font-weight: var(--fw-semi-bold); */
+        
+        &:focus{
+            border-color: var(--color-input-border-active);
+            color: var(--color-input-text-active);
+        }
+        
+        &:invalid{
+            border-color: var(--color-form-input-text-invalid);
+            color: var(--color-form-input-text-invalid);
+        }
+
+        &::placeholder {
+            color: var(--color-form-input-placeholder);
+            opacity: 1; /* Firefox */
+        }
+          
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: var(--color-form-input-placeholder);
+        }
+          
+        &::-ms-input-placeholder { /* Microsoft Edge */
+            color: var(--color-form-input-placeholder);
+        }
+    }
+}
