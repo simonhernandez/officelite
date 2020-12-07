@@ -1,0 +1,65 @@
+/*
+    ------------------------
+    ------- Card -----------
+    ------------------------
+*/
+
+.card{
+    text-align: center;
+    @include flex(fs, c, column);
+    background-color: var(--color-card-white-bg);
+    color: var(--color-card-white-text);
+
+    &--blue{
+        background-color: var(--color-card-blue-bg);
+        color: var(--color-card-blue-text);
+    }
+
+    // Mobile
+    &__title{
+        margin: var(--space-4xl) 0 var(--space-6xl);
+    }
+
+    &__list{
+        margin-bottom: var(--space-3xl);
+
+        > *:not(:last-child){
+            margin-bottom: var(--space-base);
+        }
+    }
+
+    // Tablet
+    @include breakpoint-up(medium){
+        padding: var(--space-5xl);
+        text-align: left;
+        display: grid;
+        grid-template-areas: "span ."
+                             "title list"
+                             "btn .";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+
+        span{
+            grid-area: span;
+        }
+
+        &__title{
+            grid-area: title;
+        }
+
+        &__list{
+            grid-area: list;
+        }
+
+        .btn{
+            grid-area: btn;
+        }
+    }
+
+    // Desktop
+    @include breakpoint-up(large){
+        text-align: center;
+        padding: var(--space-4xl) var(--space-8xl);
+        @include flex(fs, c, column);
+    }
+}
