@@ -1,0 +1,75 @@
+/*
+    ------------------------
+    ----- Typography -------
+    ------------------------
+*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    // Font Family
+    --ff-primary: 'Kumbh Sans', sans-serif;
+
+    // Font Weight
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    // Font Size
+    --fs-h1: 3.5rem;
+    --fs-h2: 1.25rem;
+    --fs-h3: 1rem;
+    --fs-sm: .75rem;
+    --fs-base: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 2.5rem;
+    --fs-xl: 3.5rem;
+
+    --fs-body-1: var(--fs-md);
+    --fs-body-2: var(--fs-base);
+
+    // Line Height
+    --lh-h1: 4rem;
+    --lh-h2: 1.75rem;
+    --lh-h3: 3rem;
+    --lh-body: 1.75rem;
+}
+
+body{
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-body-2);
+    line-height: var(--lh-body);
+}
+
+.heading{
+    font-weight: var(--fw-bold);
+
+    &-1{
+        font-size: var(--fs-h1);
+        line-height: var(--lh-h1);
+    }
+    &-2{
+        font-size: var(--fs-h2);
+        line-height: var(--lh-h2);
+    }
+    &-3{
+        font-size: var(--fs-h3);
+        line-height: var(--lh-h3);
+    }
+}
+
+.text-sm,
+small{
+    font-size: var(--fs-sm);
+}
+
+.text-md{
+    font-size: var(--fs-md);
+}
+
+.text-lg{
+    font-size: var(--fs-lg);
+}
+
+.text-xl{
+    font-size: var(--fs-xl);
+}
