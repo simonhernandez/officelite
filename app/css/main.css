@@ -91,8 +91,9 @@ input {
   --color-white-light: rgba(255, 255, 255, .75);
   --color-white-very-light: rgba(255, 255, 255, .5);
   --color-red: #F05B5B;
+  --color-baby-powder: #FAFAFA;
   --color-text: var(--color-gray-light);
-  --color-bg-white: var(--color-white);
+  --color-bg-white: var(--color-baby-powder);
   --color-bg-dark: var(--color-dark);
   --color-btn-primary1-bg: var(--color-blue);
   --color-btn-primary1-text: var(--color-white);
