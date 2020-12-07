@@ -1,0 +1,85 @@
+/*
+    ------------------------
+    ------- Colors ---------
+    ------------------------
+*/
+
+:root{
+    // Main Colors
+    --color-blue: #5175FF;
+    --color-blue-light: #829CFF;
+    --color-blue-very-light: rgba(81, 117, 255, .25);
+    --color-blue-extreme-light: rgba(81, 117, 255, .1526);
+    --color-blue-ultimate-light: rgba(81, 117, 255, .1);
+    --color-gray: #333950;
+    --color-gray-light: #747B95;
+    --color-dark: #25293A;
+    --color-white: #FFF;
+    --color-white-light: rgba(255, 255, 255, .75);
+    --color-white-very-light: rgba(255, 255, 255, .5);
+    --color-red: #F05B5B;
+
+    // Text
+    --color-text: var(--color-gray-light);
+
+    // Background
+    --color-bg-white: var(--color-white);
+    --color-bg-dark: var(--color-dark);
+
+    // Buttons - Primary 1
+    --color-btn-primary1-bg: var(--color-blue);
+    --color-btn-primary1-text: var(--color-white);
+    --color-btn-primary1-bg-hover: var(--color-blue-light);
+    --color-btn-primary1-text-hover: var(--color-white);
+
+    // Buttons - Primary 2
+    --color-btn-primary2-bg: var(--color-blue-extreme-light);
+    --color-btn-primary2-text: var(--color-blue);
+    --color-btn-primary2-bg-hover: var(--color-blue-very-light);
+    --color-btn-primary2-text-hover: var(--color-blue);
+
+    // Buttons - Secondary
+    --color-btn-secondary-bg: var(--color-white);
+    --color-btn-secondary-text: var(--color-blue);
+    --color-btn-secondary-bg-hover: var(--color-blue-light);
+    --color-btn-secondary-text-hover: var(--color-white);
+
+    // Form
+    --color-form-bg: var(--color-white);
+
+    // Form - Inputs
+    --color-form-input-text: var(--color-gray);
+    --color-form-input-text-invalid: var(--color-red);
+    --color-form-input-border: var(--color-gray-light);
+    --color-form-input-placeholder: var(--color-gray-light);
+
+    // Card
+    --color-card-white-bg: var(--color-white);
+    --color-card-white-text: var(--color-gray-light);
+    --color-card-blue-bg: var(--color-blue);
+    --color-card-blue-text: var(--color-blue);
+
+    // Countdown
+    --color-countdown-dark-bg: var(--color-gray);
+    --color-countdown-dark-text: var(--color-white);
+    --color-countdown-light-bg: var(--color-blue-ultimate-light);
+    --color-countdown-light-text: var(--color-blue);
+}
+
+
+.text-white{
+    color: var(--color-white);
+}
+.text-gray{
+    color: var(--color-gray);
+}
+.text-gray-light{
+    color: var(--color-gray-light);
+}
+.text-blue{
+    color: var(--color-blue);
+}
+.text-very-white{
+    color: var(--color-white-very-light);
+}
+
