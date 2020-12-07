@@ -338,6 +338,7 @@ small {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: var(--space-sm);
   background-color: var(--color-card-white-bg);
   color: var(--color-card-white-text);
 }
@@ -396,7 +397,7 @@ small {
 @media screen and (min-width: 1024px) {
   .card {
     text-align: center;
-    padding: var(--space-4xl) var(--space-8xl);
+    padding: var(--space-4xl) var(--space-5xl);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

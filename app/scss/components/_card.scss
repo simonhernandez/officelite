@@ -7,6 +7,7 @@
 .card{
     text-align: center;
     @include flex(fs, c, column);
+    border-radius: var(--space-sm);
     background-color: var(--color-card-white-bg);
     color: var(--color-card-white-text);
 
@@ -59,7 +60,7 @@
     // Desktop
     @include breakpoint-up(large){
         text-align: center;
-        padding: var(--space-4xl) var(--space-8xl);
+        padding: var(--space-4xl) var(--space-5xl);
         @include flex(fs, c, column);
     }
 }
