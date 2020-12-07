@@ -343,6 +343,8 @@ small {
   border-radius: var(--space-sm);
   background-color: var(--color-card-white-bg);
   color: var(--color-card-white-text);
+  -webkit-box-shadow: var(--bxs-card);
+          box-shadow: var(--bxs-card);
 }
 
 .card--blue {
