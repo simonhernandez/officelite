@@ -114,7 +114,7 @@ input {
   --color-card-white-bg: var(--color-white);
   --color-card-white-text: var(--color-gray-light);
   --color-card-blue-bg: var(--color-blue);
-  --color-card-blue-text: var(--color-blue);
+  --color-card-blue-text: var(--color-white);
   --color-countdown-dark-bg: var(--color-gray);
   --color-countdown-dark-text: var(--color-white);
   --color-countdown-light-bg: var(--color-blue-ultimate-light);
