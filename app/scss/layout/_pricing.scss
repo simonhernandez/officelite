@@ -1,0 +1,28 @@
+/*
+    ------------------------
+    ------- Pricing --------
+    ------------------------
+*/
+
+.pricing{
+    // Mobile
+    > *:not(:last-child){
+        margin-bottom: var(--space-3xl);
+    }
+
+    // Tablet
+    @include breakpoint-up(medium){
+        > *:not(:last-child){
+            margin-bottom: var(--space-xl);
+        }
+    }
+
+    // Desktop
+    @include breakpoint-up(large){
+        @include flex(sb, c, row);
+
+        > *:not(:last-child){
+            margin-bottom: initial;
+        }
+    }
+}
