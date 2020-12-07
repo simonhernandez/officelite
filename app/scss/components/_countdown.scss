@@ -1,0 +1,51 @@
+/*
+    ------------------------
+    ------- Countdown ------
+    ------------------------
+*/
+
+.countdown{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: var(--space-sm);
+
+    &__time{
+        border-radius: var(--space-xxs);
+        padding: var(--space-sm) var(--space-base);
+        text-align: center;
+        
+        span{
+            display: block;
+            /* margin-bottom: ; */
+        }
+    }
+
+    &--light{
+        > * {
+            background-color: var(--color-countdown-light-bg);
+            color: var(--color-countdown-light-text);
+        }
+    }
+
+    &--dark{
+        > * {
+            background-color: var(--color-countdown-dark-bg);
+            color: var(--color-countdown-dark-text);
+        }
+    }
+
+    // Tablet & Desktop
+    @include breakpoint-up(medium){
+        column-gap: var(--space-base);
+
+        &__time{
+            border-radius: var(--space-sm);
+            padding: var(--space-base);
+            
+            span{
+                display: block;
+                /* margin-bottom: ; */
+            }
+        }
+    }
+}
