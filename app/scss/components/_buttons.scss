@@ -1,0 +1,41 @@
+/*
+    ------------------------
+    ------- Buttons --------
+    ------------------------
+*/
+
+.btn{
+    display: inline-block;
+    padding: calc(var(--space-sm) * 1.66667) var(--space-5xl);
+    border-radius: var(--space-2xl);
+
+    &--primary-1{
+        background-color: var(--color-btn-primary1-bg);
+        color: var(--color-btn-primary1-text);
+        
+        &:hover{
+            background-color: var(--color-btn-primary1-bg-hover);
+            color: var(--color-btn-primary1-text-hover);
+        }
+    }
+    
+    &--primary-2{
+        background-color: var(--color-btn-primary2-bg);
+        color: var(--color-btn-primary2-text);
+        
+        &:hover{
+            background-color: var(--color-btn-primary2-bg-hover);
+            color: var(--color-btn-primary2-text-hover);
+        }
+    }
+    
+    &--secondary{
+        background-color: var(--color-btn-secondary-bg);
+        color: var(--color-btn-secondary-text);
+        
+        &:hover{
+            background-color: var(--color-btn-secondary-bg-hover);
+            color: var(--color-btn-secondary-text-hover);
+        }
+    }
+}
