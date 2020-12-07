@@ -360,6 +360,11 @@ small {
   margin: var(--space-4xl) 0 var(--space-6xl);
 }
 
+.card__title span {
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
 .card__list {
   margin-bottom: var(--space-3xl);
 }
@@ -390,6 +395,9 @@ small {
     -ms-grid-column: 1;
     grid-area: title;
   }
+  .card__title span {
+    margin-bottom: var(--space-xxs);
+  }
   .card__list {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
@@ -419,6 +427,9 @@ small {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .card__title span {
+    margin-bottom: var(--space-xs);
   }
 }
 

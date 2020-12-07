@@ -20,6 +20,10 @@
     // Mobile
     &__title{
         margin: var(--space-4xl) 0 var(--space-6xl);
+        span{
+            display: block;
+            margin-bottom: var(--space-xs);
+        }
     }
 
     &__list{
@@ -47,6 +51,9 @@
 
         &__title{
             grid-area: title;
+            span{
+                margin-bottom: var(--space-xxs);
+            }
         }
 
         &__list{
@@ -63,5 +70,11 @@
         text-align: center;
         padding: var(--space-4xl) var(--space-5xl);
         @include flex(fs, c, column);
+
+        &__title{
+            span{
+                margin-bottom: var(--space-xs);
+            }
+        }
     }
 }
