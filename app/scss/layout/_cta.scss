@@ -1,0 +1,58 @@
+/*
+    ------------------------
+    --------- CTA ----------
+    ------------------------
+*/
+
+.cta{
+
+    // Mobile
+    text-align: center;
+    
+    .heading{
+        margin-bottom: var(--space-md);
+    }
+
+    .countdown{
+        margin-bottom: var(--space-4xl);
+    }
+
+    .btn{
+        margin: 0 auto;
+    }
+
+    // Tablet
+    @include breakpoint-up(medium){
+        .heading{
+            margin-bottom: var(--space-xs);
+        }
+    
+        .countdown{
+            margin-bottom: var(--space-5xl);
+        }
+    }
+
+    // Desktop
+    @include breakpoint-up(large){
+        
+        display: grid;
+        grid-template-areas: "title ."
+                             "count btn";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+
+        .heading{
+            margin-bottom: initial;
+            grid-area: title;
+        }
+    
+        .countdown{
+            margin-bottom: initial;
+            grid-area: count;
+        }
+
+        .btn{
+            grid-area: btn;
+        }
+    }
+}
