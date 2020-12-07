@@ -165,6 +165,7 @@ input {
   --lh-h2: 1.75rem;
   --lh-h3: 3rem;
   --lh-body: 1.75rem;
+  --lh-xl: 4rem;
 }
 
 body {
@@ -180,19 +181,21 @@ body {
   font-weight: var(--fw-bold);
 }
 
-.heading-1 {
+.heading--1 {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
 }
 
-.heading-2 {
+.heading--2 {
   font-size: var(--fs-h2);
   line-height: var(--lh-h2);
 }
 
-.heading-3 {
+.heading--3 {
   font-size: var(--fs-h3);
   line-height: var(--lh-h3);
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .text-sm,
@@ -210,6 +213,7 @@ small {
 
 .text-xl {
   font-size: var(--fs-xl);
+  line-height: var(--lh-xl);
 }
 
 .text-bold {
