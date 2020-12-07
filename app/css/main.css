@@ -292,6 +292,7 @@ small {
   display: inline-block;
   padding: calc(var(--space-sm) * 1.66667) var(--space-5xl);
   border-radius: var(--space-2xl);
+  font-weight: var(--fw-bold);
 }
 
 .btn--primary-1 {
