@@ -13,11 +13,7 @@
         border-radius: var(--space-xxs);
         padding: var(--space-sm) var(--space-base);
         text-align: center;
-        
-        span{
-            display: block;
-            /* margin-bottom: ; */
-        }
+        @include flex(sb, c, column);
     }
 
     &--light{
@@ -44,7 +40,6 @@
             
             span{
                 display: block;
-                /* margin-bottom: ; */
             }
         }
     }
