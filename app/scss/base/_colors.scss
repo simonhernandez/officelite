@@ -13,6 +13,7 @@
     --color-blue-ultimate-light: rgba(81, 117, 255, .1);
     --color-gray: #333950;
     --color-gray-light: #747B95;
+    --color-gray-very-light: rgba(51, 57, 80, .5);
     --color-dark: #25293A;
     --color-white: #FFF;
     --color-white-light: rgba(255, 255, 255, .75);
@@ -71,15 +72,23 @@
 .text-white{
     color: var(--color-white);
 }
+
 .text-gray{
     color: var(--color-gray);
 }
+
 .text-gray-light{
     color: var(--color-gray-light);
 }
+
+.text-gray-very-light{
+    color: var(--color-gray-very-light);
+}
+
 .text-blue{
     color: var(--color-blue);
 }
+
 .text-very-white{
     color: var(--color-white-very-light);
 }
