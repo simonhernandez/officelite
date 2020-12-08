@@ -1,0 +1,49 @@
+/*
+    ------------------------
+    --------- Hero ---------
+    ------------------------
+*/
+
+.hero{
+
+    // Mobile
+    &__image-container{
+        max-width: 180px;
+        margin: 0 auto;
+        margin-bottom: var(--space-7xl);
+    }
+    &__text-container{
+        text-align: center;
+
+        > *:not(:last-child){
+            margin-bottom: var(--space-xl);
+        }
+    }
+
+    // Tablet
+    @include breakpoint-up(medium){
+
+        @include flex(sb, c, row);
+
+        &__image-container{
+            max-width: 285px;
+            margin: initial;
+            order: 2;
+        }
+        &__text-container{
+            text-align: left;
+        }
+    }
+
+    // Desktop
+    @include breakpoint-up(large){
+
+        &__text-container{
+            max-width: 540px;
+        }
+
+        &__image-container{
+            max-width: 475px;
+        }
+    }
+}
