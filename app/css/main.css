@@ -356,6 +356,7 @@ small {
   color: var(--color-card-white-text);
   -webkit-box-shadow: var(--bxs-card);
           box-shadow: var(--bxs-card);
+  padding: var(--space-4xl) 0;
 }
 
 .card--blue {
