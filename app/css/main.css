@@ -651,6 +651,7 @@ small {
             order: 2;
   }
   .hero__text-container {
+    max-width: 345px;
     text-align: left;
   }
 }
