@@ -30,10 +30,10 @@
 
     // Padding
 
-    padding: 0 var(--space-md);
+    padding: 0 var(--space-xl);
 
     @include breakpoint-up(medium){
-        padding: 0 5.38889rem;
+        padding: 0 var(--space-4xl);
     }
     @include breakpoint-up(large){
         padding: 0 2rem;

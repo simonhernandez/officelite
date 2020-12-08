@@ -268,12 +268,12 @@ small {
   -webkit-column-gap: inherit;
           column-gap: inherit;
   row-gap: inherit;
-  padding: 0 var(--space-md);
+  padding: 0 var(--space-xl);
 }
 
 @media screen and (min-width: 640px) {
   .wrapper {
-    padding: 0 5.38889rem;
+    padding: 0 var(--space-4xl);
   }
 }
 
