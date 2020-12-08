@@ -158,21 +158,36 @@ input {
   --ff-primary: 'Kumbh Sans', sans-serif;
   --fw-regular: 400;
   --fw-bold: 700;
-  --fs-h1: 3.5rem;
+  --fs-h1: 2.5rem;
   --fs-h2: 1.25rem;
   --fs-h3: 1rem;
   --fs-sm: .75rem;
   --fs-base: 1rem;
   --fs-md: 1.125rem;
-  --fs-lg: 2.5rem;
+  --fs-2md: 1.25rem;
+  --fs-lg: 2rem;
   --fs-xl: 3.5rem;
-  --fs-body-1: var(--fs-md);
-  --fs-body-2: var(--fs-base);
-  --lh-h1: 4rem;
+  --lh-h1: 3rem;
   --lh-h2: 1.75rem;
   --lh-h3: 3rem;
   --lh-body: 1.75rem;
+  --lh-lg: 3rem;
   --lh-xl: 4rem;
+  --fs-body-1: var(--fs-md);
+  --fs-body-2: var(--fs-base);
+}
+
+@media screen and (min-width: 640px) {
+  :root {
+    --fs-lg: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --fs-h1: 3.5rem;
+    --lh-h1: 4rem;
+  }
 }
 
 body {
@@ -214,8 +229,13 @@ small {
   font-size: var(--fs-md);
 }
 
+.text-2md {
+  font-size: var(--fs-2md);
+}
+
 .text-lg {
   font-size: var(--fs-lg);
+  line-height: var(--lh-lg);
 }
 
 .text-xl {

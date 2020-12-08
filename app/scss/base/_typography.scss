@@ -14,24 +14,41 @@
     --fw-bold: 700;
 
     // Font Size
-    --fs-h1: 3.5rem;
+    --fs-h1: 2.5rem;
     --fs-h2: 1.25rem;
     --fs-h3: 1rem;
     --fs-sm: .75rem;
     --fs-base: 1rem;
     --fs-md: 1.125rem;
-    --fs-lg: 2.5rem;
+    --fs-2md: 1.25rem;
+    --fs-lg: 2rem;
     --fs-xl: 3.5rem;
 
-    --fs-body-1: var(--fs-md);
-    --fs-body-2: var(--fs-base);
-
     // Line Height
-    --lh-h1: 4rem;
+    --lh-h1: 3rem;
     --lh-h2: 1.75rem;
     --lh-h3: 3rem;
     --lh-body: 1.75rem;
+    --lh-lg: 3rem;
     --lh-xl: 4rem;
+
+    // Tablet
+    @include breakpoint-up (medium){
+        // Font Size
+        --fs-lg: 3.5rem;
+    }
+
+    // Desktop
+    @include breakpoint-up (large){
+        // Font Size
+        --fs-h1: 3.5rem;
+
+        // Line Height
+        --lh-h1: 4rem;
+    }
+
+    --fs-body-1: var(--fs-md);
+    --fs-body-2: var(--fs-base);
 }
 
 body{
@@ -71,8 +88,13 @@ small{
     font-size: var(--fs-md);
 }
 
+.text-2md{
+    font-size: var(--fs-2md);
+}
+
 .text-lg{
     font-size: var(--fs-lg);
+    line-height: var(--lh-lg);
 }
 
 .text-xl{
