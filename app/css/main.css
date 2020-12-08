@@ -294,7 +294,7 @@ small {
 */
 .btn {
   display: inline-block;
-  padding: calc(var(--space-sm) * 1.66667) var(--space-5xl);
+  padding: calc(var(--space-sm) * 1.166667) var(--space-5xl);
   border-radius: var(--space-2xl);
   font-weight: var(--fw-bold);
 }
