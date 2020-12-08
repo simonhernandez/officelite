@@ -49,10 +49,14 @@
         .countdown{
             margin-bottom: initial;
             grid-area: count;
+            align-self: flex-start;
         }
 
         .btn{
             grid-area: btn;
+            align-self: flex-start;
+            margin: initial;
+            margin-left: auto;
         }
     }
 }

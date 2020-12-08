@@ -615,11 +615,17 @@ small {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: count;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .cta .btn {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: btn;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: initial;
+    margin-left: auto;
   }
 }
 
