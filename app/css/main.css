@@ -698,6 +698,9 @@ small {
   .hero__text-container {
     max-width: 540px;
   }
+  .hero__text-container .btn {
+    margin-top: var(--space-3xl);
+  }
   .hero__image-container {
     max-width: 475px;
   }
