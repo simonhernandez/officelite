@@ -10,10 +10,19 @@
         margin-bottom: var(--space-3xl);
     }
 
+    &__plan{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
     // Tablet
     @include breakpoint-up(medium){
         > *:not(:last-child){
             margin-bottom: var(--space-xl);
+        }
+
+        &__plan{
+            max-width: 689px;
         }
     }
 
@@ -23,6 +32,11 @@
 
         > *:not(:last-child){
             margin-bottom: initial;
+        }
+
+        &__plan{
+            max-width: 350px;
+            width: 33%;
         }
     }
 }
