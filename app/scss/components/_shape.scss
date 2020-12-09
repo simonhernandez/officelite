@@ -5,28 +5,51 @@
 */
 
 .shape{
+    background-repeat: no-repeat;
     &--home{
         &-1{
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: var(--z-back);
             background-image: url(../../../assets/home/bg-pattern-header.svg);
-            background-position: 350px -419px;
-            background-repeat: no-repeat;
-            width: 1134px;
-            height: 1134px;
+            background-position: center -170px;
+            background-size: 122%;
+            width: 100%;
+            height: 458px;
         }
         &-2{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            // z-index: var(--z-back);
             background-image: url(../../../assets/home/bg-pattern-footer.svg);
-            background-position: -702px 1000px;
-            background-repeat: no-repeat;
-            width: 2036px;
-            height: 2036px;
+            background-position: center 100px;
+            background-size: 1202px 1202px;
+            width: 100%;
+            height: 1202px;
+        }
+
+        // Tablet
+        @include breakpoint-up(medium){
+            &-1{
+                background-position: 293px -164px;
+                width: 666px;
+                height: 666px;
+            }
+            &-2{
+                background-position: center 480px;
+                background-size: 1454px 1454px;
+                width: 100%;
+                height: 1454px;
+            }
+        }
+
+        // Desktop
+        @include breakpoint-up(large){
+            &-1{
+                background-position: 350px -419px;
+                width: 1134px;
+                height: 1134px;
+            }
+            &-2{
+                background-position: -702px 800px;
+                background-size: 2036px 2036px;
+                width: 100%;
+                height: 2036px;
+            }
         }
     }
 }
