@@ -12,6 +12,8 @@
     color: var(--color-card-white-text);
     box-shadow: var(--bxs-card);
     padding: var(--space-4xl) 0;
+    max-width: 350px;
+    margin: 0 auto;
 
     &--blue{
         background-color: var(--color-card-blue-bg);
@@ -45,6 +47,7 @@
                              "btn .";
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, auto);
+        max-width: 689px;
 
         span{
             grid-area: span;

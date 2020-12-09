@@ -382,6 +382,8 @@ small {
   -webkit-box-shadow: var(--bxs-card);
           box-shadow: var(--bxs-card);
   padding: var(--space-4xl) 0;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .card--blue {
@@ -417,6 +419,7 @@ small {
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (auto)[3];
         grid-template-rows: repeat(3, auto);
+    max-width: 689px;
   }
   .card span {
     -ms-grid-row: 1;
