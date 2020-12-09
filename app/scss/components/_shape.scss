@@ -1,0 +1,32 @@
+/*
+    ------------------------
+    ------- Shape ----------
+    ------------------------
+*/
+
+.shape{
+    &--home{
+        &-1{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: var(--z-back);
+            background-image: url(../../../assets/home/bg-pattern-header.svg);
+            background-position: 350px -419px;
+            background-repeat: no-repeat;
+            width: 1134px;
+            height: 1134px;
+        }
+        &-2{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            // z-index: var(--z-back);
+            background-image: url(../../../assets/home/bg-pattern-footer.svg);
+            background-position: -702px 1000px;
+            background-repeat: no-repeat;
+            width: 2036px;
+            height: 2036px;
+        }
+    }
+}
