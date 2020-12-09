@@ -1,0 +1,28 @@
+/*
+    ------------------------
+    ----- Subscription -----
+    ------------------------
+*/
+
+.subscription{
+    // Mobile
+    padding: 4.25rem 0 6.25rem;
+
+    .pricing{
+        margin-bottom: 6.25rem;
+    }
+
+    // Tablet
+    @include breakpoint-up(medium){
+        padding: 6.75rem 0 6.25rem;
+    }
+
+    // Desktop
+    @include breakpoint-up(large){
+        padding: 5.625rem 0;
+
+        .pricing{
+            margin-bottom: 6.25rem;
+        }
+    }
+}

@@ -642,6 +642,10 @@ small {
     --------- Hero ---------
     ------------------------
 */
+.hero {
+  padding: var(--space-3xl) 0;
+}
+
 .hero__image-container {
   max-width: 180px;
   margin: 0 auto;
@@ -686,6 +690,9 @@ small {
 }
 
 @media screen and (min-width: 1024px) {
+  .hero {
+    padding: 5.875rem;
+  }
   .hero__text-container {
     max-width: 540px;
   }
@@ -792,6 +799,34 @@ small {
   }
   .pricing > *:not(:last-child) {
     margin-bottom: initial;
+  }
+}
+
+/*
+    ------------------------
+    ----- Subscription -----
+    ------------------------
+*/
+.subscription {
+  padding: 4.25rem 0 6.25rem;
+}
+
+.subscription .pricing {
+  margin-bottom: 6.25rem;
+}
+
+@media screen and (min-width: 640px) {
+  .subscription {
+    padding: 6.75rem 0 6.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .subscription {
+    padding: 5.625rem 0;
+  }
+  .subscription .pricing {
+    margin-bottom: 6.25rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
