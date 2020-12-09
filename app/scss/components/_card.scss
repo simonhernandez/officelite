@@ -16,6 +16,20 @@
     &--blue{
         background-color: var(--color-card-blue-bg);
         color: var(--color-card-blue-text);
+
+        // Background Shape
+        background-image: url(../../../assets/home/bg-pattern-pricing.svg);
+        background-size: 880px 880px;
+        background-repeat: no-repeat;
+        background-position: center -379px;
+
+        @include breakpoint-up(medium){
+            background-position: -319px -282px;
+        }
+
+        @include breakpoint-up(large){
+            background-position: center -379px;
+        }
     }
 
     // Mobile

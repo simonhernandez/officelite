@@ -387,6 +387,22 @@ small {
 .card--blue {
   background-color: var(--color-card-blue-bg);
   color: var(--color-card-blue-text);
+  background-image: url(../../../assets/home/bg-pattern-pricing.svg);
+  background-size: 880px 880px;
+  background-repeat: no-repeat;
+  background-position: center -379px;
+}
+
+@media screen and (min-width: 640px) {
+  .card--blue {
+    background-position: -319px -282px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card--blue {
+    background-position: center -379px;
+  }
 }
 
 .card__title {
