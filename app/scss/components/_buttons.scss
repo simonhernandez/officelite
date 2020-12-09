@@ -39,4 +39,8 @@
             color: var(--color-btn-secondary-text-hover);
         }
     }
+
+    &--shadow{
+        box-shadow: var(--bxs-btn);
+    }
 }

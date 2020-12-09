@@ -357,6 +357,11 @@ small {
   color: var(--color-btn-secondary-text-hover);
 }
 
+.btn--shadow {
+  -webkit-box-shadow: var(--bxs-btn);
+          box-shadow: var(--bxs-btn);
+}
+
 /*
     ------------------------
     ------- Card -----------
