@@ -7,6 +7,7 @@
 .subscription{
     // Mobile
     padding: 4.25rem 0 6.25rem;
+    background-image: linear-gradient(to bottom, transparent 40%, var(--color-dark) 40%);
 
     .pricing{
         margin-bottom: 6.25rem;
@@ -20,6 +21,7 @@
     // Desktop
     @include breakpoint-up(large){
         padding: 5.625rem 0;
+        background-image: linear-gradient(to bottom, transparent 30%, var(--color-dark) 30%);
 
         .pricing{
             margin-bottom: 6.25rem;

@@ -819,6 +819,8 @@ small {
 */
 .subscription {
   padding: 4.25rem 0 6.25rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, transparent), color-stop(40%, var(--color-dark)));
+  background-image: linear-gradient(to bottom, transparent 40%, var(--color-dark) 40%);
 }
 
 .subscription .pricing {
@@ -834,6 +836,8 @@ small {
 @media screen and (min-width: 1024px) {
   .subscription {
     padding: 5.625rem 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(30%, var(--color-dark)));
+    background-image: linear-gradient(to bottom, transparent 30%, var(--color-dark) 30%);
   }
   .subscription .pricing {
     margin-bottom: 6.25rem;
