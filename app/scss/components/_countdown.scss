@@ -14,6 +14,10 @@
         padding: var(--space-sm) var(--space-base);
         text-align: center;
         @include flex(sb, c, column);
+
+        > span:first-of-type{
+            margin-bottom: 3px;
+        }
     }
 
     &--light{

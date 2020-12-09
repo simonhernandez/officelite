@@ -569,6 +569,10 @@ small {
           flex-direction: column;
 }
 
+.countdown__time > span:first-of-type {
+  margin-bottom: 3px;
+}
+
 .countdown--light > * {
   background-color: var(--color-countdown-light-bg);
   color: var(--color-countdown-light-text);
