@@ -731,6 +731,7 @@ small {
 
 @media screen and (min-width: 1024px) {
   .cta {
+    text-align: left;
     display: -ms-grid;
     display: grid;
         grid-template-areas: "title ." "count btn";

@@ -34,7 +34,7 @@
 
     // Desktop
     @include breakpoint-up(large){
-        
+        text-align: left;
         display: grid;
         grid-template-areas: "title ."
                              "count btn";
