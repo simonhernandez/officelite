@@ -1,0 +1,70 @@
+/*
+    ------------------------
+    --------- Signup -------
+    ------------------------
+*/
+
+.signup{
+
+    // Mobile
+    padding: var(--space-3xl) 0 var(--space-9xl);
+
+    &__text-container{
+        text-align: center;
+        max-width: 573px;
+        margin: 0 auto;
+        margin-bottom: var(--space-7xl);
+
+        > *:not(:last-child){
+            margin-bottom: var(--space-base);
+        }
+
+        .paragraph{
+            margin-bottom: var(--space-7xl);
+        }
+    }
+
+    .form,
+    .countdown{
+        max-width: 445px;
+        margin: auto;
+    }
+
+    // Tablet
+    @include breakpoint-up(medium){
+
+        &__text-container{
+
+            margin-bottom: 6.5rem;
+
+            > *:not(:last-child){
+                margin-bottom: var(--space-xl);
+            }
+
+            .paragraph{
+                margin-bottom: var(--space-4xl);
+            }
+        }
+    }
+
+    // Desktop
+    @include breakpoint-up(xlarge){
+        padding: var(--space-5xl);
+        @include flex(sb, c, row);
+
+        &__text-container{
+            margin: initial;
+            max-width: 540px;
+            text-align: left;
+
+            .paragraph{
+                margin-bottom: var(--space-3xl);
+            }
+        }
+
+        .form,
+        .countdown{
+            margin: initial;
+        }
+    }
+}
