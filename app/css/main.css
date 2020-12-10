@@ -511,13 +511,6 @@ small {
   display: block;
   width: 100%;
   color: var(--color-form-input-text);
-  /* font-weight: var(--fw-semi-bold); */
-}
-
-.form input:focus,
-.form textarea:focus {
-  border-color: var(--color-input-border-active);
-  color: var(--color-input-text-active);
 }
 
 .form input:invalid,
