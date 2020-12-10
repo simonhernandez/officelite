@@ -757,6 +757,16 @@ small {
           flex-direction: row;
 }
 
+.header .shape {
+  position: absolute;
+  z-index: var(--z-back);
+}
+
+.header .shape--signup-1, .header .shape--home-1 {
+  top: 0;
+  right: 0;
+}
+
 @media screen and (min-width: 640px) {
   .header {
     padding: var(--space-8xl) 0;

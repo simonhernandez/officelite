@@ -13,6 +13,19 @@
         @include flex(c, c, row);
     }
 
+    
+    .shape{
+        position: absolute;
+        z-index: var(--z-back);
+        &--signup,
+        &--home{
+            &-1{
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
     // Tablet
     @include breakpoint-up(medium){
         padding: var(--space-8xl) 0;
