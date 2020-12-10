@@ -494,12 +494,22 @@ small {
     -------- Form ----------
     ------------------------
 */
+.form {
+  background-color: var(--color-white);
+  padding: var(--space-xl);
+  border-radius: var(--space-sm);
+  -webkit-box-shadow: var(--bxs-card);
+          box-shadow: var(--bxs-card);
+}
+
 .form > *:not(:last-child) {
   margin-bottom: var(--space-xl);
 }
 
 .form input,
 .form textarea {
+  display: block;
+  width: 100%;
   padding: var(--space-base);
   border-bottom: 1px solid var(--color-form-input-border);
   color: var(--color-form-input-text);
@@ -556,6 +566,16 @@ small {
 .form textarea::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--color-form-input-placeholder);
+}
+
+.form .btn {
+  width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  .form {
+    padding: var(--space-4xl);
+  }
 }
 
 /*
