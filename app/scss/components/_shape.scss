@@ -52,4 +52,44 @@
             }
         }
     }
+
+    &--signup{
+        &-1{
+            background-image: url(../../../assets/home/bg-pattern-header.svg);
+            background-position: center -170px;
+            background-size: 122%;
+            width: 100%;
+            height: 458px;
+        }
+        &-2{
+            background-image: url(../../../assets/home/bg-pattern-footer.svg);
+            background-position: center 100px;
+            background-size: 1202px 1202px;
+            width: 100%;
+            height: 320px;
+        }
+
+        // Tablet
+        @include breakpoint-up(medium){
+            &-1{
+                display: none;
+            }
+            &-2{
+                background-position: center 480px;
+                background-size: 1454px 1454px;
+                width: 100%;
+                height: 1454px;
+            }
+        }
+
+        // Desktop
+        @include breakpoint-up(large){
+            &-2{
+                background-position: -702px 800px;
+                background-size: 2036px 2036px;
+                width: 100%;
+                height: 2036px;
+            }
+        }
+    }
 }
