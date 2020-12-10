@@ -510,8 +510,6 @@ small {
 .form textarea {
   display: block;
   width: 100%;
-  padding: var(--space-base);
-  border-bottom: 1px solid var(--color-form-input-border);
   color: var(--color-form-input-text);
   /* font-weight: var(--fw-semi-bold); */
 }
@@ -566,6 +564,11 @@ small {
 .form textarea::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--color-form-input-placeholder);
+}
+
+.form__control {
+  border-bottom: 1px solid var(--color-form-input-border);
+  padding: var(--space-base);
 }
 
 .form .btn {

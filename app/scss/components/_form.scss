@@ -19,8 +19,6 @@
     textarea{
         display: block;
         width: 100%;
-        padding: var(--space-base);
-        border-bottom: 1px solid var(--color-form-input-border);
         color: var(--color-form-input-text);
         /* font-weight: var(--fw-semi-bold); */
         
@@ -46,6 +44,11 @@
         &::-ms-input-placeholder { /* Microsoft Edge */
             color: var(--color-form-input-placeholder);
         }
+    }
+
+    &__control{
+        border-bottom: 1px solid var(--color-form-input-border);
+        padding: var(--space-base);
     }
 
     .btn{
