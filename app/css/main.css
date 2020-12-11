@@ -87,6 +87,15 @@ input {
   line-height: inherit;
 }
 
+select {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 /*
     ------------------------
     ------- Spacing --------
