@@ -580,67 +580,139 @@ small {
     ------------------------
 */
 .shape {
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 
 .shape--home-1 {
-  background-image: url(../../../assets/home/bg-pattern-header.svg);
-  background-position: center -170px;
-  background-size: 122%;
   width: 100%;
   height: 458px;
 }
 
+.shape--home-1::before {
+  content: '';
+  position: absolute;
+  top: -170px;
+  left: -42px;
+  right: -42px;
+  margin: auto;
+  background-image: url(../../../assets/home/bg-pattern-header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 458px;
+  height: 458px;
+}
+
 .shape--home-2 {
-  background-image: url(../../../assets/home/bg-pattern-footer.svg);
-  background-position: center 100px;
-  background-size: 1202px 1202px;
   width: 100%;
+  height: 1202px;
+}
+
+.shape--home-2::before {
+  content: '';
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: -1202px;
+  right: -1202px;
+  margin: 0 auto;
+  background-image: url(../../../assets/home/bg-pattern-footer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1202px;
   height: 1202px;
 }
 
 @media screen and (min-width: 640px) {
   .shape--home-1 {
     background-position: 293px -164px;
+    width: 100%;
+    height: 666px;
+  }
+  .shape--home-1::before {
+    top: -164px;
+    left: 395px;
+    margin: auto 0;
     width: 666px;
     height: 666px;
   }
   .shape--home-2 {
-    background-position: center 480px;
-    background-size: 1454px 1454px;
     width: 100%;
+    height: 1454px;
+  }
+  .shape--home-2::before {
+    top: 480px;
+    bottom: 0;
+    left: -1454px;
+    right: -1454px;
+    margin: 0 auto;
+    width: 1454px;
     height: 1454px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .shape--home-1 {
-    background-position: 350px -419px;
+    width: 100%;
+    height: 1134px;
+  }
+  .shape--home-1::before {
+    top: -419px;
+    left: 656px;
+    margin: auto 0;
     width: 1134px;
     height: 1134px;
   }
   .shape--home-2 {
-    background-position: -702px 800px;
-    background-size: 2036px 2036px;
     width: 100%;
+    height: 2036px;
+  }
+  .shape--home-2::before {
+    top: 800px;
+    left: -702px;
+    margin: initial;
+    width: 2036px;
     height: 2036px;
   }
 }
 
 .shape--signup-1 {
-  background-image: url(../../../assets/home/bg-pattern-header.svg);
-  background-position: center -170px;
-  background-size: 122%;
   width: 100%;
   height: 458px;
 }
 
+.shape--signup-1::before {
+  content: '';
+  position: absolute;
+  top: -170px;
+  left: -42px;
+  right: -42px;
+  margin: auto;
+  background-image: url(../../../assets/home/bg-pattern-header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 458px;
+  height: 458px;
+}
+
 .shape--signup-2 {
-  background-image: url(../../../assets/home/bg-pattern-footer.svg);
-  background-position: center -420px;
-  background-size: 1202px 1202px;
   width: 100%;
   height: 320px;
+}
+
+.shape--signup-2::before {
+  content: '';
+  position: absolute;
+  top: -420px;
+  bottom: 0;
+  left: -1202px;
+  right: -1202px;
+  margin: 0 auto;
+  background-image: url(../../../assets/home/bg-pattern-footer.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1202px;
+  height: 1202px;
 }
 
 @media screen and (min-width: 640px) {
@@ -648,18 +720,29 @@ small {
     display: none;
   }
   .shape--signup-2 {
-    background-position: center -500px;
-    background-size: 1454px 1454px;
     width: 100%;
     height: 380px;
+  }
+  .shape--signup-2::before {
+    top: -500px;
+    left: -1454px;
+    right: -1454px;
+    margin: 0 auto;
+    width: 1454px;
+    height: 1454px;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .shape--signup-2 {
-    background-position: -740px 500px;
-    background-size: 2036px 2036px;
     width: 30%;
+    height: 2036px;
+  }
+  .shape--signup-2::before {
+    top: 500px;
+    left: -740px;
+    margin: initial;
+    width: 2036px;
     height: 2036px;
   }
 }
