@@ -1102,10 +1102,8 @@ small {
   margin-bottom: var(--space-7xl);
 }
 
-.signup .form,
-.signup .countdown {
-  max-width: 445px;
-  margin: auto;
+.signup .form {
+  width: 100%;
 }
 
 @media screen and (min-width: 640px) {
@@ -1117,6 +1115,11 @@ small {
   }
   .signup__text-container .paragraph {
     margin-bottom: var(--space-4xl);
+  }
+  .signup .form,
+  .signup .countdown {
+    max-width: 445px;
+    margin: auto;
   }
 }
 

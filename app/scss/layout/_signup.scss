@@ -24,10 +24,8 @@
         }
     }
 
-    .form,
-    .countdown{
-        max-width: 445px;
-        margin: auto;
+    .form{
+        width: 100%;
     }
 
     // Tablet
@@ -44,6 +42,12 @@
             .paragraph{
                 margin-bottom: var(--space-4xl);
             }
+        }
+
+        .form,
+        .countdown{
+            max-width: 445px;
+            margin: auto;
         }
     }
 
