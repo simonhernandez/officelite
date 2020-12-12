@@ -1,2 +1,2 @@
 # officelite
-This repo showcases my solution to Frontend Mentor's Challenge: Officelite Coming Soon Page
+Two page website that showcases Officelite. A collaboration platform to manage your project and improve productivity.
