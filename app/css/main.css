@@ -620,6 +620,23 @@ small {
   padding: var(--space-base);
 }
 
+.form__control.hasError {
+  border-bottom-color: var(--color-form-input-text-invalid);
+  position: relative;
+}
+
+.form__control.hasError::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+  background-image: url(../../../assets/sign-up/icon-cross.svg);
+  width: 20px;
+  height: 20px;
+}
+
 .form .btn {
   width: 100%;
 }

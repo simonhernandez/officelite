@@ -45,6 +45,23 @@
         padding: var(--space-base);
     }
 
+    &__control.hasError{
+        border-bottom-color: var(--color-form-input-text-invalid);
+        position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                right: 0;
+                background-image: url(../../../assets/sign-up/icon-cross.svg);
+                width: 20px;
+                height: 20px;
+            }
+    }
+
     .btn{
         width: 100%;
     }
