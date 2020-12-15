@@ -43,25 +43,24 @@ function checkInputs(){
     let emailValue = email.value.trim();
     let companyValue = company.value.trim();
     let phoneValue = phone.value.trim();
-    // let textValue = text.value.trim();
     hasError = false;
 
     if (nameValue === ''){
-        setErrorFor(namee, 'Name cannot be blank');
+        setErrorFor(namee);
     }
 
     if (emailValue === ''){
-        setErrorFor(email, 'Email cannot be blank');
+        setErrorFor(email);
     } else if (!isValid(emailValue)){
-        setErrorFor(email, 'Email is not valid');
+        setErrorFor(email);
     }
 
     if (companyValue === ''){
-        setErrorFor(company, 'Company cannot be blank');
+        setErrorFor(company);
     }
 
     if (phoneValue === ''){
-        setErrorFor(phone, 'Phone cannot be blank');
+        setErrorFor(phone);
     }
 
     if (!hasError){
@@ -70,7 +69,7 @@ function checkInputs(){
 
 }
 
-function setErrorFor(input, message){
+function setErrorFor(input){
     const formControl = input.parentElement;
 
     formControl.classList.toggle('hasError');
