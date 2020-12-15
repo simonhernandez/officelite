@@ -11,6 +11,8 @@ const phone = document.getElementById('phone');
 const text = document.getElementById('text');
 const planSelector = document.getElementById('plansSelector');
 const planMenu = document.getElementById('plansMenu');
+const planItems = document.querySelectorAll('.plans__item');
+const plansPlan = document.getElementById('plansPlan');
 var hasError;
 
 /*
@@ -26,7 +28,10 @@ form.addEventListener('submit', e => {
 
 planSelector.addEventListener('click', () => {
     planMenu.classList.toggle('show-plans');
+    planSelector.classList.toggle('isOpen');
 });
+
+planItems.forEach(item => item.addEventListener('click', setSelected));
 
 /*
     ------------------------
@@ -87,4 +92,14 @@ function clearInputs(){
 
 function isValid(email) {
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+
+function setSelected(){
+    planItems.forEach(item => item.classList.remove('selected'));
+    this.classList.add('selected');
+    planMenu.classList.toggle('show-plans');
+    planSelector.classList.toggle('isOpen');
+
+    plansPlan.firstElementChild.innerText = this.firstElementChild.innerText;
+    plansPlan.lastElementChild.innerText = this.lastElementChild.innerText;
 }
