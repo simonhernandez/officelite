@@ -91,12 +91,18 @@
           </div>
 
           <!-- Plans -->
-          <div class="form__control">
-            <select name="packs" id="packs">
-              <option value="Basic" selected>Basic Pack Free</option>
-              <option value="Pro">Pro Pack $9.99</option>
-              <option value="Ultimate">Ultimate Pack $19.99</option>
-            </select>
+          <div class="form__control plans">
+            <button type="button" class="plans__selector">
+              <div class="plans__plan">
+                <strong>Basic Pack</strong><span>Free</span>
+              </div>
+              <div class="plans__arrow"></div>
+            </button>
+            <ul class="plans__menu">
+              <li class="plans__item selected"><strong>Basic Pack</strong><span>Free</span></li>
+              <li class="plans__item"><strong>Pro Pack</strong><span>$9.99</span></li>
+              <li class="plans__item"><strong>Ultimate Pack</strong><span>$19.99</span></li>
+            </ul>
           </div>
 
           <!-- Phone -->
