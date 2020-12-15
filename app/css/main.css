@@ -1067,7 +1067,7 @@ small {
 
 @media screen and (min-width: 1024px) {
   .hero {
-    padding: 5.875rem;
+    padding: 1.3125rem 0 4.5625rem;
   }
   .hero__text-container {
     max-width: 540px;

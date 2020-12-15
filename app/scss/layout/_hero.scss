@@ -39,7 +39,7 @@
 
     // Desktop
     @include breakpoint-up(large){
-        padding: 5.875rem;
+        padding: 1.3125rem 0 4.5625rem;
 
         &__text-container{
             max-width: 540px;
