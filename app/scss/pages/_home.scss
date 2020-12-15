@@ -7,7 +7,9 @@
 .main{
 
     &--home{
-        .section.subscription{
+        .section.subscription,
+        .section.hero{
+            overflow: hidden;
             position: relative;
             z-index: var(--z-normal);
         }

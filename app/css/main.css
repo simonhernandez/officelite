@@ -1204,7 +1204,9 @@ small {
     ------- Home -----------
     ------------------------
 */
-.main--home .section.subscription {
+.main--home .section.subscription,
+.main--home .section.hero {
+  overflow: hidden;
   position: relative;
   z-index: var(--z-normal);
 }
