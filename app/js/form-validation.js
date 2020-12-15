@@ -4,7 +4,7 @@
     ------------------------
 */
 const form = document.getElementById('form');
-const name = document.getElementById('name');
+const namee = document.getElementById('name');
 const email = document.getElementById('email');
 const company = document.getElementById('company');
 const phone = document.getElementById('phone');
@@ -39,15 +39,15 @@ planItems.forEach(item => item.addEventListener('click', setSelected));
     ------------------------
 */
 function checkInputs(){
-    let nameValue = name.value.trim();
+    let nameValue = namee.value.trim();
     let emailValue = email.value.trim();
     let companyValue = company.value.trim();
     let phoneValue = phone.value.trim();
-    let textValue = text.value.trim();
+    // let textValue = text.value.trim();
     hasError = false;
 
     if (nameValue === ''){
-        setErrorFor(name, 'Name cannot be blank');
+        setErrorFor(namee, 'Name cannot be blank');
     }
 
     if (emailValue === ''){
@@ -64,10 +64,6 @@ function checkInputs(){
         setErrorFor(phone, 'Phone cannot be blank');
     }
 
-    if (textValue === ''){
-        setErrorFor(text, 'Text cannot be blank');
-    }
-
     if (!hasError){
         clearInputs();
     }
@@ -76,10 +72,8 @@ function checkInputs(){
 
 function setErrorFor(input, message){
     const formControl = input.parentElement;
-    const small = formControl.querySelector('small');
-    small.style.display = 'block';
-    small.innerText = message;
-    hasError = true;
+
+    formControl.classList.toggle('hasError');
 }
 
 function clearInputs(){
