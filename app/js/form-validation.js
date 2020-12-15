@@ -9,6 +9,8 @@ const email = document.getElementById('email');
 const company = document.getElementById('company');
 const phone = document.getElementById('phone');
 const text = document.getElementById('text');
+const planSelector = document.getElementById('plansSelector');
+const planMenu = document.getElementById('plansMenu');
 var hasError;
 
 /*
@@ -20,6 +22,10 @@ form.addEventListener('submit', e => {
     e.preventDefault();
 
     checkInputs();
+});
+
+planSelector.addEventListener('click', () => {
+    planMenu.classList.toggle('show-plans');
 });
 
 /*
