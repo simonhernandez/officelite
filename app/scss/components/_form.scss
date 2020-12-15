@@ -58,10 +58,18 @@
             @include flex(sb, c, row);
         }
 
+        &__selector.isOpen{
+            .plans__arrow{
+                transform: rotate(180deg);
+                transition: transform .25s ease-out;
+            }
+        }
+        
         &__arrow{
             background-image: url(../../../assets/sign-up/icon-arrow-down.svg);
             width: 13px;
             height: 8px;
+            transition: transform .25s ease-out;
         }
 
         &__menu{
@@ -81,10 +89,25 @@
         }
 
         &__item{
-            padding-bottom: var(--space-base);
+            cursor: pointer;
 
             &:not(:last-of-type){
+                padding-bottom: var(--space-base);
                 border-bottom: 1px solid var(--color-form-input-border);
+            }
+        }
+
+        &__item.selected{
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 6px;
+                right: 0;
+                background-image: url(../../../assets/sign-up/icon-check.svg);
+                width: 15px;
+                height: 12px;
             }
         }
     }
