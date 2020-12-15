@@ -13,6 +13,7 @@ const planSelector = document.getElementById('plansSelector');
 const planMenu = document.getElementById('plansMenu');
 const planItems = document.querySelectorAll('.plans__item');
 const plansPlan = document.getElementById('plansPlan');
+const formControls = document.querySelectorAll('.form__control');
 var hasError;
 
 /*
@@ -47,20 +48,24 @@ function checkInputs(){
 
     if (nameValue === ''){
         setErrorFor(namee);
+        hasError = true;
     }
 
     if (emailValue === ''){
         setErrorFor(email);
     } else if (!isValid(emailValue)){
         setErrorFor(email);
+        hasError = true;
     }
 
     if (companyValue === ''){
         setErrorFor(company);
+        hasError = true;
     }
 
     if (phoneValue === ''){
         setErrorFor(phone);
+        hasError = true;
     }
 
     if (!hasError){
@@ -76,11 +81,11 @@ function setErrorFor(input){
 }
 
 function clearInputs(){
-    name.value = '';
+    namee.value = '';
     email.value = '';
     company.value = '';
     phone.value = '';
-    text.value = '';
+    formControls.forEach(formControl => formControl.classList.remove('hasError'));
 }
 
 function isValid(email) {
