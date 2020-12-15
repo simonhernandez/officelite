@@ -49,6 +49,46 @@
         width: 100%;
     }
 
+    .plans{
+
+        position: relative;
+
+        &__selector{
+            width: 100%;
+            @include flex(sb, c, row);
+        }
+
+        &__arrow{
+            background-image: url(../../../assets/sign-up/icon-arrow-down.svg);
+            width: 13px;
+            height: 8px;
+        }
+
+        &__menu{
+            display: none;
+            position: absolute;
+            top: 110%;
+            left: 0;
+            width: 100%;
+            padding: var(--space-xl) var(--space-3xl);
+            background-color: var(--color-white);
+            border-radius: var(--space-xs);
+            border: 1px solid rgba(51, 57, 80, .1533);
+
+            > *:not(:last-child){
+                margin-bottom: var(--space-base);
+            }
+        }
+
+        &__item{
+            padding-bottom: var(--space-base);
+
+            &:not(:last-of-type){
+                border-bottom: 1px solid var(--color-form-input-border);
+            }
+        }
+    }
+
     // Tablet & Desktop
     @include breakpoint-up(medium){
         padding: var(--space-4xl);

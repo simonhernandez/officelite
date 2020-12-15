@@ -615,6 +615,57 @@ small {
   width: 100%;
 }
 
+.form .plans {
+  position: relative;
+}
+
+.form .plans__selector {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.form .plans__arrow {
+  background-image: url(../../../assets/sign-up/icon-arrow-down.svg);
+  width: 13px;
+  height: 8px;
+}
+
+.form .plans__menu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  padding: var(--space-xl) var(--space-3xl);
+  background-color: var(--color-white);
+  border-radius: var(--space-xs);
+  border: 1px solid rgba(51, 57, 80, 0.1533);
+}
+
+.form .plans__menu > *:not(:last-child) {
+  margin-bottom: var(--space-base);
+}
+
+.form .plans__item {
+  padding-bottom: var(--space-base);
+}
+
+.form .plans__item:not(:last-of-type) {
+  border-bottom: 1px solid var(--color-form-input-border);
+}
+
 @media screen and (min-width: 640px) {
   .form {
     padding: var(--space-4xl);
