@@ -686,6 +686,7 @@ small {
   position: absolute;
   top: 110%;
   left: 0;
+  z-index: var(--z-tooltip);
   width: 100%;
   padding: var(--space-xl) var(--space-3xl);
   background-color: var(--color-white);
